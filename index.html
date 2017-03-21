@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>UI Router</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+
+</head>
+<body>
+<nav class=" navbar navbar-inverse" roles="navigation">
+    <div class="navbar-header">
+        <a class="navbar-brand" >Company</a>
+    </div>
+    <ul class="nav navbar-nav">
+        <li><a ui-sref="home" >Home</a></li>
+        <li ><a ui-sref="about">About</a></li>
+    </ul>
+</nav>
+<div class="container">
+    <div ui-view></div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
